@@ -1,5 +1,4 @@
-# Re:ゼロから始めるFlutter生活(TIL day2)
-#flutter
+# flutter TIL day1,2
 
 ### Container
 [Container class - widgets library - Dart API](https://api.flutter.dev/flutter/widgets/Container-class.html)
@@ -10,7 +9,8 @@
 2. Wrap with new widget
 3. widget→SafeAreaに変更
 
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.17.51.png)
+<img width="353" alt="スクリーンショット 2019-12-22 10 17 51" src="https://user-images.githubusercontent.com/11751495/71317831-f7f14780-24ca-11ea-9825-6dbe901f690c.png">
+
 
 ``` dart
 class MyApp extends StatelessWidget {
@@ -88,11 +88,15 @@ mainAxisAlignment: MainAxisAlignment.center
 ``` 
 verticalDirection: VerticalDirection.up,
 ```
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.47.12.png)
+
+![スクリーンショット 2019-12-22 10 47 12](https://user-images.githubusercontent.com/11751495/71317835-10f9f880-24cb-11ea-8100-83b00051ccf8.png)
+
 ``` 
 verticalDirection: VerticalDirection.down,
 ```
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.48.21.png)
+
+![スクリーンショット 2019-12-22 10 48 21](https://user-images.githubusercontent.com/11751495/71317839-23743200-24cb-11ea-9d50-a282a8c39396.png)
+
 #### crossAxisAlignment
 交差軸に沿って子を配置する方法。
 [crossAxisAlignment property - RenderFlex class - rendering library - Dart API](https://api.flutter.dev/flutter/rendering/RenderFlex/crossAxisAlignment.html)
@@ -101,12 +105,15 @@ verticalDirection: VerticalDirection.down,
 ``` 
 crossAxisAlignment: CrossAxisAlignment.start,
 ```
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.52.02.png)
+![スクリーンショット 2019-12-22 10 51 25](https://user-images.githubusercontent.com/11751495/71317843-32f37b00-24cb-11ea-8f2a-b34a96a860e2.png)
+
 後ろ寄せ
 ``` 
 crossAxisAlignment: CrossAxisAlignment.end,
 ```
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.51.25.png)
+
+![スクリーンショット 2019-12-22 10 52 02](https://user-images.githubusercontent.com/11751495/71317848-3f77d380-24cb-11ea-97a7-9ee74451382f.png)
+
 ##### Containerに画面幅いっぱいに横に広げる
 ``` 
 width: double.infinity,
@@ -139,7 +146,7 @@ children: <Widget>[
             ],
 ```
 
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.55.02.png)
+![スクリーンショット 2019-12-22 10 55 02](https://user-images.githubusercontent.com/11751495/71317851-50c0e000-24cb-11ea-8643-4718d0ca3a54.png)
 
 ##### widthの指定をせずに親のColumnの幅に合わせて伸びるようにする
 ``` 
@@ -169,7 +176,7 @@ child: Column(
           ),
 ```
 
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2010.58.26.png)
+![スクリーンショット 2019-12-22 10 58 26](https://user-images.githubusercontent.com/11751495/71317855-5c140b80-24cb-11ea-913e-3f82f179e0a2.png)
 
 #### SizedBox
 Children同士にスペースを置く
@@ -214,14 +221,16 @@ child: Row(
             ],
           ),
 ```
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202019-12-22%2011.03.14.png)
+
+![スクリーンショット 2019-12-22 11 03 14](https://user-images.githubusercontent.com/11751495/71317862-6a622780-24cb-11ea-852c-34b5b122df8d.png)
 
 #### 課題
 
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/Layout-Challenge-Specs.png)
+![Layout-Challenge-Specs](https://user-images.githubusercontent.com/11751495/71317866-75b55300-24cb-11ea-8f53-002e6c958a8a.png)
 
 作ったもの
-![](Re:%E3%82%BB%E3%82%99%E3%83%AD%E3%81%8B%E3%82%89%E5%A7%8B%E3%82%81%E3%82%8BFlutter%E7%94%9F%E6%B4%BB(TIL%20day2)/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202019-12-22%20at%2014.35.02.png)
+
+![Simulator Screen Shot - iPhone 11 Pro Max - 2019-12-22 at 14 35 02](https://user-images.githubusercontent.com/11751495/71317867-78b04380-24cb-11ea-8d5b-09ba7b38fe56.png)
 
 spaceBetweenを使わないと左右の端にマージンができてしまうので注意
 ``` 
