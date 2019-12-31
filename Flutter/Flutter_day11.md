@@ -1,9 +1,10 @@
 ### やったこと
 
+CardViewにコンテンツをいれて、ボタン化する
+
 - CustomWidgetの作成
 - GestureDetectorの追加
 - Enum
-- 
 
 ### CustomWidgetの作成
 [前回](https://github.com/mcz9mm/TIL/blob/master/Flutter/Flutter_day10.md)作成したReusableCardの中にコンテンツを追加する
