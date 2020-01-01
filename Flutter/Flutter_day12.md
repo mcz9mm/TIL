@@ -3,7 +3,7 @@
 - Functions as First Order Objects
 - Constants
 - Slider Widget
-- 
+- Slider ThemeData
 
 ### Functions as First Order Objects
 
@@ -131,6 +131,7 @@ const kBottomContainerColor = Color(0xFFEB1555);
 
 
 ### Slider Widget
+https://api.flutter.dev/flutter/material/Slider-class.html
 
 ![Jan-01-2020 14-47-22](https://user-images.githubusercontent.com/11751495/71638529-b0767280-2ca5-11ea-99ab-82943ed38ad1.gif)
 
@@ -148,6 +149,61 @@ Slider(
     });
   },
 ),
+```
+
+### Slider ThemeData
+
+![Jan-01-2020 15-17-47](https://user-images.githubusercontent.com/11751495/71638677-e74e8780-2ca9-11ea-832b-430554005283.gif)
+
+https://api.flutter.dev/flutter/material/SliderThemeData-class.html
+
+```
+SliderTheme(
+  data: SliderTheme.of(context).copyWith(
+    activeTrackColor: Colors.white,
+    inactiveTrackColor: Color(0xFF8D8E98),
+    overlayColor: Color(0x29EB1555),
+    thumbColor: Color(0xFFEB1555),
+    thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15.0),
+    overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
+  ),
+  child: Slider(
+    value: height.toDouble(),
+    min: 120.0,
+    max: 220.0,
+    onChanged: (double newValue) {
+      print(newValue);
+      setState(() {
+        height = newValue.round();
+      });
+    },
+  ),
+),
+```
+
+#### アプリ全体で使う場合
+
+```
+class BMICalculator extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData.dark().copyWith(
+        sliderTheme: SliderTheme.of(context).copyWith(
+          activeTrackColor: Colors.white,
+          inactiveTrackColor: Color(0xFF8D8E98),
+          overlayColor: Color(0x29EB1555),
+          thumbColor: Color(0xFFEB1555),
+          thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15.0),
+          overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0),
+        ),
+        primaryColor: Color(0xFF0A0E21),
+        scaffoldBackgroundColor: Color(0xFF0A0E21),
+      ),
+      home: InputPage(),
+    );
+  }
+}
 ```
 
 ### Repositories
