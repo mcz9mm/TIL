@@ -160,6 +160,8 @@ if (Platform.isIOS) {
 }
 ```
 
+![Jan-06-2020 22-35-05](https://user-images.githubusercontent.com/11751495/71821221-e5832a80-30d4-11ea-9ad1-94d5c45bc23e.gif)
+
 ### Repositories
 https://github.com/mcz9mm/bitcoin-ticker-flutter
 
