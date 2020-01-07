@@ -5,6 +5,9 @@ Boss Level Challenge 3
 - レベル2 銀メダル
 - レベル3 金メダル
 
+### API
+https://apiv2.bitcoinaverage.com/#ticker-data-per-symbol
+
 ### レベル1 銅メダル
 ビットコインの価格（米ドル）を表示する
 
