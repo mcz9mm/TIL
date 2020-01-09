@@ -158,6 +158,12 @@ animation.addStatusListener((status) {
 ![Jan-09-2020 09-31-22](https://user-images.githubusercontent.com/11751495/72027553-d8c42980-32c2-11ea-8cf2-28d8778f935d.gif)
 
 #### ColorTweenでカラーアニメーション
+他にもたくさんある
+https://api.flutter.dev/flutter/animation/Tween-class.html
+
+> Implementers
+> AlignmentGeometryTweenAlignmentTweenBorderRadiusTweenBorderTweenBoxConstraintsTweenColorTweenConstantTweenDecorationTweenEdgeInsetsGeometryTweenEdgeInsetsTweenFractionalOffsetTweenIntTweenMaterialPointArcTweenMatrix4TweenRectTweenRelativeRectTweenReverseTweenShapeBorderTweenSizeTweenStepTweenTextStyleTweenThemeDataTween
+
 ```
 controller = AnimationController(
   duration: Duration(seconds: 3),
