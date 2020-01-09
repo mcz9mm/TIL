@@ -157,6 +157,22 @@ animation.addStatusListener((status) {
 
 ![Jan-09-2020 09-31-22](https://user-images.githubusercontent.com/11751495/72027553-d8c42980-32c2-11ea-8cf2-28d8778f935d.gif)
 
+#### ColorTweenでカラーアニメーション
+```
+controller = AnimationController(
+  duration: Duration(seconds: 3),
+  vsync: this,
+);
+
+animation = ColorTween(begin: Colors.red, end: Colors.blue).animate(controller);
+
+//
+backgroundColor: animation.value,
+```
+
+![Jan-09-2020 09-40-04](https://user-images.githubusercontent.com/11751495/72027914-0bbaed00-32c4-11ea-9bdc-4df51cf58f6a.gif)
+
+
 #### 画面が閉じられるタイミングでdispose
 
 別画面へ遷移してもアニメーションのリソースは消費したままなので
