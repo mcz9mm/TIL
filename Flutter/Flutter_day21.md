@@ -139,6 +139,3 @@ decoration: kTextFieldDecoration.copyWith(hintText: 'Enter your password'),
 ```
 <img width="210" alt="スクリーンショット 2020-01-10 8 38 40" src="https://user-images.githubusercontent.com/11751495/72113716-9d8a2f00-3384-11ea-8542-987759ac297b.png">
 
-
-### Repositories
-https://github.com/mcz9mm/flash-chat-flutter
