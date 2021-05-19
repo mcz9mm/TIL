@@ -1,8 +1,10 @@
 # What’s new in Android
 #googleio
 
-[動作の変更点: Android 12 をターゲットとするアプリ  |  Android 12 デベロッパー プレビュー](https://developer.android.com/about/versions/12/behavior-changes-12)
-[動作の変更点: すべてのアプリ  |  Android 12 デベロッパー プレビュー  |  Android Developers](https://developer.android.com/about/versions/12/behavior-changes-all)
+## 全体確認用
+[behavior-changes-12](https://developer.android.com/about/versions/12/behavior-changes-12)
+
+[behavior-changes-all](https://developer.android.com/about/versions/12/behavior-changes-all)
 
 ## annotationを非推奨に
 
